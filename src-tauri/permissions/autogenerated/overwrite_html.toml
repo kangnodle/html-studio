@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-overwrite-html"
+description = "Enables the overwrite_html command without any pre-configured scope."
+commands.allow = ["overwrite_html"]
+
+[[permission]]
+identifier = "deny-overwrite-html"
+description = "Denies the overwrite_html command without any pre-configured scope."
+commands.deny = ["overwrite_html"]

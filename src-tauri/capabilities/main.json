@@ -1,0 +1,14 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Editor window: HTML open/save, overwrite opened files and close confirmation",
+  "windows": ["main"],
+  "permissions": [
+    "core:event:default",
+    "core:window:allow-destroy",
+    "dialog:allow-message",
+    "allow-save-html",
+    "allow-open-html",
+    "allow-overwrite-html"
+  ]
+}

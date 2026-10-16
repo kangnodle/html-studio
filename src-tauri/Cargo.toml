@@ -1,0 +1,19 @@
+[package]
+name = "html-studio"
+version = "0.3.0"
+description = "A visual editor for static HTML documents"
+edition = "2021"
+rust-version = "1.98"
+
+[build-dependencies]
+tauri-build = { version = "=2.7.0", features = [] }
+
+[dependencies]
+tauri = { version = "=2.12.0", features = [] }
+tauri-plugin-dialog = "=2.8.0"
+tempfile = "=3.27.0"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1

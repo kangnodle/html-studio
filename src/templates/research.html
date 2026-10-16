@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>연구 논문</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 48px 24px;
+        background: #edf0f4;
+        color: #232b38;
+        font:
+          16px/1.85 Georgia,
+          'Times New Roman',
+          serif;
+      }
+      article {
+        max-width: 860px;
+        margin: auto;
+        padding: 64px 72px;
+        background: white;
+        border-top: 5px solid #334d75;
+        box-shadow: 0 10px 40px #172d4c0a;
+      }
+      .paper-header {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+      .category {
+        color: #596d8c;
+        font:
+          12px Arial,
+          sans-serif;
+        letter-spacing: 3px;
+      }
+      h1 {
+        font-size: clamp(26px, 4vw, 36px);
+        line-height: 1.4;
+        margin: 20px 0;
+      }
+      .authors,
+      .affiliation {
+        margin: 6px 0;
+      }
+      .affiliation {
+        color: #697588;
+        font-size: 13px;
+      }
+      .abstract {
+        padding: 24px;
+        background: #f4f6f9;
+        border: 1px solid #e2e7ef;
+      }
+      .abstract h2 {
+        margin-top: 0;
+      }
+      .keywords {
+        font-size: 13px;
+        color: #596d8c;
+      }
+      section {
+        margin-top: 32px;
+      }
+      h2 {
+        margin-bottom: 12px;
+        font-size: 21px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+      p {
+        margin: 12px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+      }
+      caption {
+        text-align: left;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #d5deea;
+        text-align: left;
+      }
+      th {
+        border-top: 2px solid #334d75;
+        background: #f4f6f9;
+      }
+      figure {
+        margin: 24px 0;
+      }
+      .figure-placeholder {
+        padding: 40px 20px;
+        border: 1px dashed #aebbd0;
+        background: #fafbfd;
+        text-align: center;
+        color: #7183a0;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 13px;
+      }
+      .references {
+        padding-left: 24px;
+        font-size: 14px;
+      }
+      footer {
+        margin-top: 36px;
+        padding-top: 16px;
+        border-top: 1px solid #d5deea;
+        color: #697588;
+        font-size: 12px;
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 16px;
+        }
+        article {
+          padding: 32px 24px;
+        }
+      }
+      @page {
+        size: A4;
+        margin: 20mm;
+      }
+      @media print {
+        body {
+          padding: 0;
+          background: white;
+          font-size: 11pt;
+        }
+        article {
+          padding: 0;
+          border: 0;
+          box-shadow: none;
+          max-width: none;
+        }
+        h2,
+        h3 {
+          break-after: avoid;
+        }
+        table,
+        figure {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header class="paper-header">
+        <p class="category">RESEARCH ARTICLE</p>
+        <h1>연구의 핵심 질문을 드러내는 논문 제목</h1>
+        <p class="authors">저자 이름¹ · 공동 저자 이름²</p>
+        <p class="affiliation">¹ 소속 기관 및 학과 · ² 소속 기관 및 학과</p>
+        <p class="affiliation">교신 저자: 이메일 주소 · 작성일: YYYY-MM-DD</p>
+      </header>
+      <section class="abstract">
+        <h2>초록</h2>
+        <p>
+          연구 배경, 목적, 방법, 주요 결과와 의의를 간결하게 요약하세요. 실제 연구를 수행한 뒤
+          검증된 결과로 이 안내 문구를 교체하세요.
+        </p>
+        <p class="keywords"><strong>핵심어:</strong> 핵심어 1, 핵심어 2, 핵심어 3</p>
+      </section>
+      <main>
+        <section>
+          <h2>1. 서론</h2>
+          <p>
+            연구 배경과 해결하려는 문제를 설명하세요. 선행 연구의 한계를 정리하고 본 연구의 목적과
+            연구 질문을 제시하세요.
+          </p>
+          <h3>1.1 연구 질문</h3>
+          <p>이 연구를 통해 확인하려는 질문 또는 가설을 작성하세요.</p>
+        </section>
+        <section>
+          <h2>2. 연구 방법</h2>
+          <p>연구 설계, 대상, 자료 수집 방법과 분석 절차를 재현할 수 있는 수준으로 기술하세요.</p>
+          <h3>2.1 자료 및 분석</h3>
+          <p>
+            표본 선정 기준, 측정 도구, 변수 정의와 분석 방법을 입력하세요. 해당되는 경우 윤리 승인과
+            동의 절차를 포함하세요.
+          </p>
+        </section>
+        <section>
+          <h2>3. 연구 결과</h2>
+          <p>
+            실제 관찰 결과를 표와 그림으로 제시하세요. 아래 항목은 작성 안내이며 실제 연구 데이터가
+            아닙니다.
+          </p>
+          <table>
+            <caption>
+              표 1. 주요 결과 요약
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">측정 항목</th>
+                <th scope="col">결과</th>
+                <th scope="col">해석</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>항목 이름</td>
+                <td>측정값 입력</td>
+                <td>결과의 의미 입력</td>
+              </tr>
+              <tr>
+                <td>항목 이름</td>
+                <td>측정값 입력</td>
+                <td>결과의 의미 입력</td>
+              </tr>
+            </tbody>
+          </table>
+          <figure>
+            <div class="figure-placeholder">
+              <p>연구 그림 또는 도표 영역</p>
+              <p>실제 결과와 설명으로 교체하세요.</p>
+            </div>
+            <figcaption>그림 1. 그림의 내용과 해석을 작성하세요.</figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>4. 논의</h2>
+          <p>
+            결과를 선행 연구와 비교하고 의미를 해석하세요. 연구의 한계, 대안적 설명과 후속 연구
+            방향을 포함하세요.
+          </p>
+        </section>
+        <section>
+          <h2>5. 결론</h2>
+          <p>
+            연구 질문에 대한 답과 핵심 기여를 요약하세요. 결과가 뒷받침하는 범위 안에서 결론을
+            작성하세요.
+          </p>
+        </section>
+        <section>
+          <h2>참고문헌</h2>
+          <ol class="references">
+            <li>저자. (연도). 논문 제목. 학술지명, 권(호), 페이지. DOI 또는 URL.</li>
+            <li>저자. (연도). 도서 제목. 출판사.</li>
+          </ol>
+        </section>
+      </main>
+      <footer>
+        연구비 지원, 이해 상충 및 데이터 공개 정보를 작성하세요. 제출 기관의 서식에 맞게 조정하세요.
+      </footer>
+    </article>
+  </body>
+</html>

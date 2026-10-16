@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>사용자 매뉴얼</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f4f6f5;
+        color: #263b34;
+        font:
+          16px/1.8 Arial,
+          sans-serif;
+      }
+      .cover {
+        padding: 56px max(24px, calc((100% - 1000px) / 2));
+        background: #234e3e;
+        color: white;
+      }
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 12px 0;
+        font-size: clamp(30px, 5vw, 48px);
+        line-height: 1.25;
+      }
+      .cover p {
+        max-width: 640px;
+      }
+      .meta {
+        color: #cbdfd4;
+        font-size: 13px;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 210px minmax(0, 1fr);
+        gap: 40px;
+        max-width: 1048px;
+        padding: 40px 24px;
+        margin: auto;
+      }
+      nav {
+        align-self: start;
+        padding: 20px;
+        background: #e7eee9;
+        border-radius: 10px;
+      }
+      nav a {
+        display: block;
+        padding: 7px 0;
+        color: #306b50;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      section {
+        margin-bottom: 24px;
+        padding: 28px;
+        background: white;
+        border: 1px solid #dce5df;
+        border-radius: 10px;
+      }
+      h2 {
+        margin: 0 0 16px;
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+      .note {
+        padding: 16px 20px;
+        border-left: 3px solid #629a75;
+        background: #edf5ef;
+      }
+      li {
+        padding: 5px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #dce5df;
+        text-align: left;
+      }
+      th {
+        background: #edf3ef;
+      }
+      pre {
+        overflow: auto;
+        padding: 18px;
+        background: #263b34;
+        color: #edf5ef;
+        border-radius: 6px;
+        line-height: 1.6;
+      }
+      footer {
+        max-width: 1000px;
+        margin: 0 auto 32px;
+        padding: 0 24px;
+        font-size: 12px;
+        color: #718077;
+      }
+      @media (max-width: 700px) {
+        .layout {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        section {
+          padding: 20px;
+        }
+      }
+      @media print {
+        body {
+          background: white;
+          font-size: 11pt;
+        }
+        .cover {
+          padding: 24px;
+          background: white;
+          color: #263b34;
+          border-bottom: 2px solid;
+        }
+        .meta {
+          color: #52635a;
+        }
+        .layout {
+          display: block;
+          padding: 24px 0;
+        }
+        nav {
+          display: none;
+        }
+        section {
+          border: 0;
+          padding: 0;
+        }
+        h2,
+        h3 {
+          break-after: avoid;
+        }
+        table,
+        pre,
+        .note {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cover">
+      <div class="eyebrow">USER GUIDE · VERSION 1.0</div>
+      <h1>제품 이름 사용자 매뉴얼</h1>
+      <p>처음 사용하는 사람도 쉽게 따라 할 수 있도록 제품의 주요 기능과 사용 방법을 안내합니다.</p>
+      <p class="meta">작성자: 이름 · 대상: 일반 사용자 · 최종 수정: YYYY-MM-DD</p>
+    </header>
+    <div class="layout">
+      <nav aria-label="목차">
+        <strong>이 문서의 내용</strong><a href="#overview">01 소개</a
+        ><a href="#start">02 시작하기</a><a href="#usage">03 사용 절차</a
+        ><a href="#faq">04 자주 묻는 질문</a>
+      </nav>
+      <main>
+        <section id="overview">
+          <h2>01. 소개</h2>
+          <p>제품이 해결하는 문제와 이 매뉴얼에서 다루는 내용을 작성하세요.</p>
+          <div class="note">
+            <strong>읽기 전에</strong>
+            <p>필요한 계정, 권한, 준비물 또는 지원 환경을 안내하세요.</p>
+          </div>
+        </section>
+        <section id="start">
+          <h2>02. 시작하기</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">준비 항목</th>
+                <th scope="col">설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>사용 환경</td>
+                <td>지원하는 운영체제와 브라우저를 입력하세요.</td>
+              </tr>
+              <tr>
+                <td>계정 및 권한</td>
+                <td>필요한 계정과 접근 권한을 입력하세요.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="usage">
+          <h2>03. 사용 절차</h2>
+          <ol>
+            <li><strong>준비:</strong> 작업을 시작하기 전에 필요한 설정을 확인하세요.</li>
+            <li><strong>실행:</strong> 메뉴에서 기능을 선택하고 정보를 입력하세요.</li>
+            <li><strong>확인:</strong> 결과를 확인한 후 저장하세요.</li>
+          </ol>
+          <h3>설정 예시</h3>
+          <pre><code>{
+  "project": "my-project",
+  "mode": "standard"
+}</code></pre>
+          <p>실제 설정 값과 예시로 교체하세요.</p>
+        </section>
+        <section id="faq">
+          <h2>04. 자주 묻는 질문</h2>
+          <h3>원하는 결과가 나오지 않으면 어떻게 하나요?</h3>
+          <p>설정과 입력 값을 먼저 확인하세요. 해결되지 않으면 문의 방법을 안내하세요.</p>
+          <h3>어디에서 도움을 받을 수 있나요?</h3>
+          <p>담당 부서, 연락처 또는 도움말 링크를 작성하세요.</p>
+        </section>
+      </main>
+    </div>
+    <footer>제품 이름 · 사용자 매뉴얼 · 조직 이름</footer>
+  </body>
+</html>

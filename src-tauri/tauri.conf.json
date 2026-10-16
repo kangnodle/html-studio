@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "HTML Studio",
+  "version": "../package.json",
+  "identifier": "local.htmlstudio.editor",
+  "build": {
+    "beforeDevCommand": "vp dev",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "vp check --no-fmt && vp build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "HTML Studio",
+        "width": 1440,
+        "height": 960,
+        "minWidth": 800,
+        "minHeight": 600,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": "script-src 'self'; object-src 'none'; base-uri 'none'; connect-src ipc: http://ipc.localhost",
+      "devCsp": "script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; connect-src ipc: http://ipc.localhost http://127.0.0.1:5173 ws://127.0.0.1:5173"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico"],
+    "shortDescription": "Visual editor for static HTML documents",
+    "windows": {
+      "webviewInstallMode": { "type": "downloadBootstrapper", "silent": true },
+      "nsis": { "installMode": "currentUser", "displayLanguageSelector": false }
+    }
+  }
+}
