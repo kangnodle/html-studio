@@ -3,6 +3,7 @@
   "version": "0.4.0",
   "description": "A visual editor for static HTML documents",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "dependencies": {
     "@tauri-apps/api": "^2.12.0",

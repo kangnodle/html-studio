@@ -2,6 +2,10 @@
 
 Vite+(`vp`), TypeScript, SolidJS와 Tauri 2로 만든 정적 HTML 화면 편집기입니다. Tauri 코어/API/CLI는 최신 안정 버전 2.12.0, 대화상자 플러그인은 2.8.0을 사용합니다. Rust와 JavaScript 의존성은 `src-tauri/Cargo.lock`과 `bun.lock`으로 고정합니다.
 
+## 라이선스
+
+HTML Studio는 모든 권리를 보유하는 독점 소프트웨어입니다. 이용 조건과 라이선스 문의처는 저장소 루트의 [LICENSE](LICENSE)를 참조하세요. 제3자 구성 요소에는 각각의 라이선스가 적용됩니다.
+
 ## 데스크톱 개발
 
 ```powershell

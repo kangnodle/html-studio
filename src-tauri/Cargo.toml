@@ -2,6 +2,8 @@
 name = "html-studio"
 version = "0.3.0"
 description = "A visual editor for static HTML documents"
+license-file = "../LICENSE"
+publish = false
 edition = "2021"
 rust-version = "1.98"
 
